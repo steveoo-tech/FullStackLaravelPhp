@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
+    // Shows detail for single item.
+public function detail($id) {
+        $product = Product::where('id', $id)->first();
+        return view('product/detail', [
+            'product' => $product
+        ]);
+    }
+
     public function index() {
         $products = Product::orderBy('created_at', 'asc')->get();
        
