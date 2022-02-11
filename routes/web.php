@@ -9,9 +9,12 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/product/index', 'ProductController@index');
 
+Route::get('/home/detail/{id}', 'HomeController@detail');
+
+Route::get('/product/detail/{id}', 'ProductController@detail');
+
 
 // Route::get('/', function () {
-// $products = Product::orderBy('created_at', 'asc')->get();
 
 
 //  return view('welcome', [
