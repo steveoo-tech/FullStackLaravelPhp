@@ -14,7 +14,7 @@
                 <div>{{ $product->description }}</div>
             </td>
             <td>
-         <a href="/home/detail/{{ $product->id }}">detail</a>
+         <a href="/product/detail/{{ $product->id }}">detail</a>
             </td>
         </tr>
         @endforeach
